@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2358B1F246EDB5800BD4984 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2358B1E246EDB5800BD4984 /* Constants.swift */; };
+		D2358B21246F024C00BD4984 /* URLBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2358B20246F024C00BD4984 /* URLBuilderProtocol.swift */; };
+		D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */; };
 		D2BFBD51246C8E0700628CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */; };
 		D2BFBD53246C8E0700628CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */; };
 		D2BFBD55246C8E0700628CD5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */; };
@@ -15,6 +18,13 @@
 		D2BFBD5C246C8E0900628CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BFBD5B246C8E0900628CD5 /* Assets.xcassets */; };
 		D2BFBD5F246C8E0900628CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BFBD5D246C8E0900628CD5 /* LaunchScreen.storyboard */; };
 		D2BFBD6A246C8E0900628CD5 /* TVShowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD69246C8E0900628CD5 /* TVShowsTests.swift */; };
+		D2F22231246D50CB0021AD27 /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F22230246D50CB0021AD27 /* APIManagerProtocol.swift */; };
+		D2F22233246D50D60021AD27 /* RequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F22232246D50D60021AD27 /* RequestBuilderProtocol.swift */; };
+		D2F22235246D50DF0021AD27 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F22234246D50DF0021AD27 /* APIManager.swift */; };
+		D2F22237246D50EA0021AD27 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F22236246D50EA0021AD27 /* RequestBuilder.swift */; };
+		D2F2223A246D516D0021AD27 /* MovieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F22239246D516D0021AD27 /* MovieStruct.swift */; };
+		D2F2223D246D52620021AD27 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2223C246D52620021AD27 /* URLBuilder.swift */; };
+		D2F2223F246D8E9F0021AD27 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2223E246D8E9F0021AD27 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2358B1E246EDB5800BD4984 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2358B20246F024C00BD4984 /* URLBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderProtocol.swift; sourceTree = "<group>"; };
+		D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
 		D2BFBD4D246C8E0700628CD5 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +53,13 @@
 		D2BFBD65246C8E0900628CD5 /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BFBD69246C8E0900628CD5 /* TVShowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsTests.swift; sourceTree = "<group>"; };
 		D2BFBD6B246C8E0900628CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F22230246D50CB0021AD27 /* APIManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
+		D2F22232246D50D60021AD27 /* RequestBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		D2F22234246D50DF0021AD27 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D2F22236246D50EA0021AD27 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		D2F22239246D516D0021AD27 /* MovieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStruct.swift; sourceTree = "<group>"; };
+		D2F2223C246D52620021AD27 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		D2F2223E246D8E9F0021AD27 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2BE8E49246F0AF10085D725 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D2F2223E246D8E9F0021AD27 /* NetworkError.swift */,
+				D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D2BE8E4C246F0B450085D725 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */,
+				D2BFBD56246C8E0700628CD5 /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2BE8E4D246F0B4F0085D725 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D2358B1E246EDB5800BD4984 /* Constants.swift */,
+				D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */,
+				D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D2BE8E4E246F0B6B0085D725 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D2BFBD5D246C8E0900628CD5 /* LaunchScreen.storyboard */,
+				D2BFBD58246C8E0700628CD5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		D2BFBD44246C8E0700628CD5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +138,11 @@
 		D2BFBD4F246C8E0700628CD5 /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
-				D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */,
-				D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */,
-				D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */,
-				D2BFBD56246C8E0700628CD5 /* SecondViewController.swift */,
-				D2BFBD58246C8E0700628CD5 /* Main.storyboard */,
+				D2BE8E4C246F0B450085D725 /* ViewControllers */,
+				D2F2222F246D50B20021AD27 /* API */,
+				D2BE8E4D246F0B4F0085D725 /* Other */,
+				D2BE8E4E246F0B6B0085D725 /* Storyboards */,
 				D2BFBD5B246C8E0900628CD5 /* Assets.xcassets */,
-				D2BFBD5D246C8E0900628CD5 /* LaunchScreen.storyboard */,
 				D2BFBD60246C8E0900628CD5 /* Info.plist */,
 			);
 			path = TVShows;
@@ -100,6 +155,37 @@
 				D2BFBD6B246C8E0900628CD5 /* Info.plist */,
 			);
 			path = TVShowsTests;
+			sourceTree = "<group>";
+		};
+		D2F2222F246D50B20021AD27 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D2BE8E49246F0AF10085D725 /* Enums */,
+				D2F22238246D51500021AD27 /* Structs */,
+				D2F2223B246D52020021AD27 /* Protocols */,
+				D2F22234246D50DF0021AD27 /* APIManager.swift */,
+				D2F2223C246D52620021AD27 /* URLBuilder.swift */,
+				D2F22236246D50EA0021AD27 /* RequestBuilder.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D2F22238246D51500021AD27 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				D2F22239246D516D0021AD27 /* MovieStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		D2F2223B246D52020021AD27 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D2F22230246D50CB0021AD27 /* APIManagerProtocol.swift */,
+				D2F22232246D50D60021AD27 /* RequestBuilderProtocol.swift */,
+				D2358B20246F024C00BD4984 /* URLBuilderProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +292,17 @@
 				D2BFBD57246C8E0700628CD5 /* SecondViewController.swift in Sources */,
 				D2BFBD55246C8E0700628CD5 /* FirstViewController.swift in Sources */,
 				D2BFBD51246C8E0700628CD5 /* AppDelegate.swift in Sources */,
+				D2F2223F246D8E9F0021AD27 /* NetworkError.swift in Sources */,
+				D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */,
+				D2358B21246F024C00BD4984 /* URLBuilderProtocol.swift in Sources */,
 				D2BFBD53246C8E0700628CD5 /* SceneDelegate.swift in Sources */,
+				D2F22231246D50CB0021AD27 /* APIManagerProtocol.swift in Sources */,
+				D2F2223D246D52620021AD27 /* URLBuilder.swift in Sources */,
+				D2F2223A246D516D0021AD27 /* MovieStruct.swift in Sources */,
+				D2F22233246D50D60021AD27 /* RequestBuilderProtocol.swift in Sources */,
+				D2F22235246D50DF0021AD27 /* APIManager.swift in Sources */,
+				D2F22237246D50EA0021AD27 /* RequestBuilder.swift in Sources */,
+				D2358B1F246EDB5800BD4984 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pawecegielskime.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pawecegielskime.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
