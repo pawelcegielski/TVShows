@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20B93A824703B7500857CB5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20B93A724703B7500857CB5 /* MovieTableViewCell.swift */; };
 		D2358B1F246EDB5800BD4984 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2358B1E246EDB5800BD4984 /* Constants.swift */; };
 		D2358B21246F024C00BD4984 /* URLBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2358B20246F024C00BD4984 /* URLBuilderProtocol.swift */; };
 		D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20B93A724703B7500857CB5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D2358B1E246EDB5800BD4984 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2358B20246F024C00BD4984 /* URLBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderProtocol.swift; sourceTree = "<group>"; };
 		D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20B93A624703B5A00857CB5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D20B93A724703B7500857CB5 /* MovieTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D2BE8E49246F0AF10085D725 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		D2BFBD4F246C8E0700628CD5 /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
+				D20B93A624703B5A00857CB5 /* Cells */,
 				D2BE8E4C246F0B450085D725 /* ViewControllers */,
 				D2F2222F246D50B20021AD27 /* API */,
 				D2BE8E4D246F0B4F0085D725 /* Other */,
@@ -294,6 +305,7 @@
 				D2BFBD51246C8E0700628CD5 /* AppDelegate.swift in Sources */,
 				D2F2223F246D8E9F0021AD27 /* NetworkError.swift in Sources */,
 				D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */,
+				D20B93A824703B7500857CB5 /* MovieTableViewCell.swift in Sources */,
 				D2358B21246F024C00BD4984 /* URLBuilderProtocol.swift in Sources */,
 				D2BFBD53246C8E0700628CD5 /* SceneDelegate.swift in Sources */,
 				D2F22231246D50CB0021AD27 /* APIManagerProtocol.swift in Sources */,
