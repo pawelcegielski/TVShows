@@ -8,16 +8,13 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MoviesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         APIManager().getPopularMovies { (movies) in
             print(movies)
         }
     }
-
-
 }
 

@@ -12,8 +12,8 @@
 		D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE8E4A246F0B2B0085D725 /* NetworkRequestType.swift */; };
 		D2BFBD51246C8E0700628CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */; };
 		D2BFBD53246C8E0700628CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */; };
-		D2BFBD55246C8E0700628CD5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */; };
-		D2BFBD57246C8E0700628CD5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD56246C8E0700628CD5 /* SecondViewController.swift */; };
+		D2BFBD55246C8E0700628CD5 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD54246C8E0700628CD5 /* MoviesViewController.swift */; };
+		D2BFBD57246C8E0700628CD5 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFBD56246C8E0700628CD5 /* TVViewController.swift */; };
 		D2BFBD5A246C8E0700628CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BFBD58246C8E0700628CD5 /* Main.storyboard */; };
 		D2BFBD5C246C8E0900628CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BFBD5B246C8E0900628CD5 /* Assets.xcassets */; };
 		D2BFBD5F246C8E0900628CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BFBD5D246C8E0900628CD5 /* LaunchScreen.storyboard */; };
@@ -44,8 +44,8 @@
 		D2BFBD4D246C8E0700628CD5 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BFBD50246C8E0700628CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2BFBD52246C8E0700628CD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D2BFBD56246C8E0700628CD5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D2BFBD54246C8E0700628CD5 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		D2BFBD56246C8E0700628CD5 /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 		D2BFBD59246C8E0700628CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2BFBD5B246C8E0900628CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2BFBD5E246C8E0900628CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		D2BE8E4C246F0B450085D725 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D2BFBD54246C8E0700628CD5 /* FirstViewController.swift */,
-				D2BFBD56246C8E0700628CD5 /* SecondViewController.swift */,
+				D2BFBD54246C8E0700628CD5 /* MoviesViewController.swift */,
+				D2BFBD56246C8E0700628CD5 /* TVViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -289,8 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BFBD57246C8E0700628CD5 /* SecondViewController.swift in Sources */,
-				D2BFBD55246C8E0700628CD5 /* FirstViewController.swift in Sources */,
+				D2BFBD57246C8E0700628CD5 /* TVViewController.swift in Sources */,
+				D2BFBD55246C8E0700628CD5 /* MoviesViewController.swift in Sources */,
 				D2BFBD51246C8E0700628CD5 /* AppDelegate.swift in Sources */,
 				D2F2223F246D8E9F0021AD27 /* NetworkError.swift in Sources */,
 				D2BE8E4B246F0B2B0085D725 /* NetworkRequestType.swift in Sources */,
