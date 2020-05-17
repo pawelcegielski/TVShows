@@ -9,10 +9,20 @@
 import UIKit
 
 internal class APIManager: APIManagerProtocol {
+    internal func downloadData(dataURL: URL, completion: @escaping (ResultBlock<Data, Error>)) {
+        let dataTask = URLSession.shared.dataTask(with: dataURL) {(data, reponse, error) in
+            if let data = data {
+                completion(.success(data))
+            } else {
+                completion(.failure(NetworkError.requestError))
+            }
+        }
+        dataTask.resume()
+    }
+    
     internal func getPopularTVShows(page: Int = 1, completion: @escaping (ResultBlock<[TVShowStruct], NetworkError>)) {
         let url = URLBuilder().popularTVShowsURL()
         let queryItems = ["page": "\(page)"]
-        
         RequestBuilder().performRequest(requestType: .GET, url: url, queryItems: queryItems, body: nil) { (result) in
             switch result {
             case .failure(let error):
@@ -33,7 +43,6 @@ internal class APIManager: APIManagerProtocol {
     internal func getPopularMovies(page: Int = 1, completion: @escaping (ResultBlock<[MovieStruct], NetworkError>)) {
         let url = URLBuilder().popularMoviesURL()
         let queryItems = ["page": "\(page)"]
-        
         RequestBuilder().performRequest(requestType: .GET, url: url, queryItems: queryItems, body: nil) { (result) in
             switch result {
             case .failure(let error):

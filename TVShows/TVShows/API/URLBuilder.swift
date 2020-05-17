@@ -17,7 +17,7 @@ internal class URLBuilder: URLBuilderProtocol {
         return URL(string: urlString)
     }
     
-    func getFullPosterURL(posterPath: String) -> URL? {
+    internal func getFullPosterURL(posterPath: String) -> URL? {
         let urlString = URLBuilder.imageBaseURLString + "/original" + posterPath
         return URL(string: urlString)
     }
