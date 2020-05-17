@@ -11,4 +11,5 @@ typealias ResultBlock<T, Q: Error> = (Result<T, Q>) -> ()
 
 protocol APIManagerProtocol {
     func getPopularMovies(page: Int, completion: @escaping (ResultBlock<[MovieStruct], NetworkError>))
+    func getPopularTVShows(page: Int, completion: @escaping (ResultBlock<[TVShowStruct], NetworkError>))
 }

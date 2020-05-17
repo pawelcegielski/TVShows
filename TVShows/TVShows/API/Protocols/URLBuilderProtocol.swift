@@ -10,4 +10,7 @@ import UIKit
 
 protocol URLBuilderProtocol {
     func popularMoviesURL() -> URL
+    func popularTVShowsURL() -> URL
+    func getThumbnailPosterURL(posterPath: String) -> URL?
+    func getFullPosterURL(posterPath: String) -> URL?
 }
