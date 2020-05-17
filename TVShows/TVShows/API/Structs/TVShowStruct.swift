@@ -15,6 +15,7 @@ internal struct TVShowStruct: Codable {
     var voteAverage: Double
     var popularity: Double
     var voteCount: Int
+    var overview: String
 }
 
 internal struct TVShowStructAPI: Codable {
