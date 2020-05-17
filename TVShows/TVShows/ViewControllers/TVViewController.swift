@@ -21,6 +21,8 @@ class TVViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.systemBackground
+        title = "TV Shows"
         APIManager().getPopularTVShows { (result) in
             switch result {
             case .failure(let error):
@@ -52,11 +54,18 @@ extension TVViewController: UICollectionViewDelegate, UICollectionViewDataSource
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let tvShow = tvShows[indexPath.row]
+        
+        let vc = TVShowDetailsViewController()
+        vc.tvShow = tvShow
+        navigationController?.pushViewController(vc, animated: true)
+    }
     private func handleImage(cell: TVShowCollectionViewCell, imageURL: URL, indexPath: IndexPath ) {
         if let image = imageCache.object(forKey: NSString(string: imageURL.absoluteString)) {
             cell.posterImageView.image = image
         } else {
-            downloadImage(imageURL: imageURL) { (result) in
+            APIManager().downloadData(dataURL: imageURL) { (result) in
                 switch result {
                 case .failure(let error):
                     print(error)
@@ -72,17 +81,6 @@ extension TVViewController: UICollectionViewDelegate, UICollectionViewDataSource
                 }
             }
         }
-    }
-    
-    private func downloadImage(imageURL: URL, completion: @escaping (Result<Data, Error>) -> ()) {
-        let dataTask = URLSession.shared.dataTask(with: imageURL) {(data, reponse, error) in
-            if let data = data {
-                completion(.success(data))
-            } else {
-                completion(.failure(NetworkError.requestError))
-            }
-        }
-        dataTask.resume()
     }
 }
 
