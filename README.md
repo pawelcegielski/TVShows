@@ -7,6 +7,6 @@ App loads data from [The Moview DB](https://www.themoviedb.org/). Before use it'
 Used technologies: Swift 5, UIKit, Autolayout (using storyboards and written from code), StackView, MVC, REST API. 
 
 ![TV](images/tv.png)
-![TV_show_details](images/details.png=250x)
-![Movies](images/movies.png=250x)
+![TV_show_details](images/details.png)
+![Movies](images/movies.png)
 
